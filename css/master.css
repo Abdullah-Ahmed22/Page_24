@@ -1,0 +1,803 @@
+/* start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor:  #000000;
+    --secondaryColor: #fafafa;
+    --mainFamily:"Poppins", sans-serif;
+    --secondaryFamily: "Inter", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small Screen  */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+
+/* Medium Screen  */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+
+/* Large Screen  */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+/* Start Top Header */
+body {
+    margin: 0px;
+}
+.top-header {
+    background-color: var(--mainColor);
+    /* width: 1513px;
+    Height: 22px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 365px;
+    /* position: relative;
+    top: -12px;
+    right: 8px; */
+}
+
+.top-header .summer-sale {
+    font-family: var(--mainFamily);
+    color: var(--secondaryColor);
+    padding-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+}
+
+.top-header .summer-sale p{
+    position: relative;
+    top: -2px;
+}
+
+.top-header .summer-sale a {
+    font-family: var(--mainFamily);
+    color: var(--secondaryColor);
+    font-size: 10px;
+    position: relative;
+    top: -3px
+}
+
+.top-header .summer-sale a:hover{
+    color: #2196f3;
+}
+
+.top-header .language{
+    font-family: var(--mainFamily);
+    color: var(--secondaryColor);
+    font-size: 10px;
+    position: relative;
+    cursor: pointer;
+    top: -3px;
+}
+
+.top-header .language ul {
+    background-color: #eee;
+    width: 177px;
+    height: 100px;
+    position: absolute;
+    top: 23px;
+    left: -100px;
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    z-index: 10;
+    display: none;
+}
+
+.top-header ul li:not(:last-child) a {
+    border-bottom: 1px solid #333;
+}
+
+
+
+.top-header .language::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -11px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent transparent #eee transparent;
+    z-index: 11;
+    display: none;
+}
+
+.top-header .language:hover ul , 
+.top-header .language:hover::before {
+    display: block;
+}
+
+.top-header .language ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.top-header .language ul li a:hover {
+    padding-left: 20px;
+    background-color: #ddd;
+}
+
+.top-header .language i {
+    padding-left: 3px;
+}
+/* End Top Header */
+
+/* Start Header */
+.header{
+    padding-top: 30px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .container a{
+    text-decoration: none;
+}
+
+.header .container a header {
+    font-family: var(--secondaryFamily);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--mainColor);
+    
+}
+
+.header .container .bar1{
+    padding-top: 7px;
+    margin-right: -29px;
+    margin-left: -60px;
+}
+.header .container .bar1 a {
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--mainColor);
+    padding-left: 65px;
+    text-decoration: none;
+}
+
+.header .container .bar2{
+    padding-top: 8px;
+}
+
+.header .container .bar2 input{
+    background-color: #f5f5f5;
+    border-color: transparent;
+    padding: 5px;
+    margin-right: -4px;
+}
+
+.header .container .bar2 input:focus{
+    outline: none;
+}
+
+.header .container .bar2 button{
+    background-color: #f5f5f5;
+    border-color: transparent;
+    padding: 5px;
+}
+
+.header .container .bar2 i {
+    padding-left: 12px;
+    cursor: pointer;
+    color: var(--mainColor);
+}
+
+.header hr{
+    color: var(--mainColor);
+    opacity: 30%;
+}
+
+.header .container .bar1 a:hover{
+    opacity: 50%;
+}
+/* End Header */
+
+/*Start Body */
+/* Start First Section  */
+.first-section{
+    margin-top: 100px;
+}
+
+.first-section .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 680px;
+}
+
+.first-section .container .wish-list{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--mainColor);
+}
+
+.first-section .container .button button{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 12px;
+    background-color: white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    position: relative;
+    right: -7px;
+    top: 7px;
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.first-section .container .button button:hover{
+    opacity: 50%;
+    padding: 18px 38px;
+}
+/* End First Section  */
+
+/* Start Second Section  */
+.second-section .container{
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    align-content: center;
+    Height: 322px;
+    column-gap: 16px;
+    padding: 0px;
+    margin-top: 50px;
+    
+}
+
+.second-section .container .smart{
+    /* background-color: red; */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    transition: 0.5s;
+}
+
+.second-section .container .smart a .p1,
+.second-section .container .smart a .p2,
+.second-section .container .smart a .p3,
+.second-section .container .smart a .p4{
+    width: 250px;
+    height: 230px;
+    object-fit: contain;
+    background-color: #eee;
+    margin-bottom: 100px;
+    text-decoration: none;
+    
+}
+
+.second-section .container div:hover{
+    box-shadow: 13px 13px 11px -1px #00000031 
+}
+
+.second-section .container .smart .cart-shopping{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    background-color: var(--mainColor);
+    width: 241px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+    text-decoration: none;
+    color: #FFFFFF;
+    top: 206px;
+    border-radius: 3px;
+}
+.second-section .container .smart .cart-shopping span:hover{
+    opacity: 50%;
+}
+
+.second-section .container .smart .trash{
+    position: absolute;
+    top: 6px;
+    left: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 50%;
+    color: var(--mainColor);
+    text-decoration: none;
+    /* background-: 80%; */
+}
+
+.second-section .container .smart .trash:hover{
+    opacity: 50%;
+}
+
+.second-section .container .smart .sale{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    top: 8px;
+    right: 188px;
+    background-color: #f44336;
+    padding: 6px;
+    color: white;
+}
+.second-section .container .smart a p{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--mainColor);
+    position: absolute;
+    top: 220px;
+    right: 46px;
+}
+.second-section .container .smart .discount{
+    display: flex;
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 16px;
+    color: #f44336;
+    position: absolute;
+    top: 295px;
+    right: 149px;
+}
+
+.second-section .container .smart .discount del{
+    color: var(--mainColor);
+    opacity: 50%;
+    margin-left: 7px;
+}
+
+.second-section .container .smart .price{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 16px;
+    color: #f44336;
+    position: absolute;
+    top: 295px;
+    right: 198px;
+}
+/* End Second Section  */
+
+/* Start Third Section  */
+.third-section{
+    margin-top: 100px;
+}
+
+.third-section .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 680px;
+}
+
+.third-section .container .unique{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--mainColor);
+}
+
+.third-section .container .unique::before{
+    content: "";
+    width: 20px;
+    height: 40px;
+    border: 9px solid #f44336;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.third-section .container .button button{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 12px;
+    background-color: white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    position: relative;
+    right: -15px;
+    top: 7px;
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.third-section .container .button button:hover{
+    opacity: 50%;
+    padding: 18px 38px;
+}
+/* Start Third Section  */
+
+/* Start Fourth Section  */
+.fourth-section .container{
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    align-content: center;
+    Height: 322px;
+    column-gap: 16px;
+    padding: 0px;
+    margin-top: 50px;
+    
+}
+
+.fourth-section .container .smart{
+    /* background-color: red; */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    transition: 0.5s;
+}
+
+.fourth-section .container .smart a .p1,
+.fourth-section .container .smart a .p2,
+.fourth-section .container .smart a .p3,
+.fourth-section .container .smart a .p4{
+    width: 250px;
+    height: 230px;
+    object-fit: contain;
+    background-color: #eee;
+    margin-bottom: 100px;
+    text-decoration: none;
+    
+}
+
+.fourth-section .container div:hover{
+    box-shadow: 13px 13px 11px -1px #00000031 
+}
+
+.fourth-section .container .smart .cart-shopping{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    background-color: var(--mainColor);
+    width: 241px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+    text-decoration: none;
+    color: #FFFFFF;
+    top: 199px;
+    border-radius: 3px;
+}
+.fourth-section .container .smart .cart-shopping span:hover{
+    opacity: 50%;
+}
+
+.fourth-section .container .smart .trash{
+    position: absolute;
+    top: 6px;
+    left: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 50%;
+    color: var(--mainColor);
+    text-decoration: none;
+    /* background-: 80%; */
+}
+
+.fourth-section .container .smart .trash:hover{
+    opacity: 50%;
+}
+
+.fourth-section .container .smart .sale{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 12px;
+    position: absolute;
+    top: 8px;
+    right: 188px;
+    background-color: #f44336;
+    padding: 6px;
+    color: white;
+}
+.fourth-section .container .smart a p{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--mainColor);
+    position: absolute;
+    top: 213px;
+    right: 46px;
+}
+.fourth-section .container .smart .discount{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 16px;
+    color: #f44336;
+    position: absolute;
+    top: 282px;
+    right: 163px;
+}
+
+.fourth-section .container .smart .discount del{
+    color: var(--mainColor);
+    opacity: 50%;
+    margin-left: 7px;
+}
+
+.fourth-section .container .smart .price{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 16px;
+    color: #f44336;
+    position: absolute;
+    top: 282px;
+    right: 198px;
+}
+
+.fourth-section .container .smart .stars{
+    position: absolute;
+    top: 300px;
+    right: 122px;
+    color: #FFAD33;
+}
+
+.fourth-section .container .smart .stars span{
+    color: var(--mainColor);
+    opacity: 50%;
+}
+/* End Fourth Section  */
+/*End Body */
+
+/* Start Footer  */
+/* Start Main Footer  */
+.footer{
+    background-color: #000000;
+    /* width: 1513px;
+    position: relative;
+    bottom: -10px;
+    right: 8px; */
+}
+
+.footer .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 440px;
+    margin-top: 150px;
+}
+
+.footer .container .support-column a,
+.footer .container .Subscribe-column h4,
+.footer .container .account-column h4,
+.footer .container .account-column a,
+.footer .container .quik-line-column h4,
+.footer .container .quik-line-column a{
+    display: block;
+}
+
+.footer .Subscribe-column a,
+.footer .support-column a,
+.footer .account-column a,
+.footer .quik-line-column a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+/* End Main Footer  */
+
+/* Start Column One */
+.footer .container .Subscribe-column h4{
+    font-family: var(--mainFamily);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--secondaryColor);
+    position: relative;
+    top: 19px;
+}
+
+.footer .container .Subscribe-column a{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondaryColor);
+    position: relative;
+    top: 11px;
+}
+
+.footer .container .Subscribe-column a:hover{
+    opacity: 50%;
+}
+
+.footer .container .Subscribe-column p{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondaryColor);
+    position: relative;
+    top: 16px;
+}
+
+.footer .container .Subscribe-column .email input{
+    background-color: var(--mainColor);
+    border-color: var(--secondaryColor);
+    border-radius: 3px;
+    height: 35px;
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondaryColor);
+}
+
+.footer .container .Subscribe-column .email input::placeholder{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondaryColor);
+}
+/* End Column One */
+
+/* Start Column Two */
+.footer .container .support-column h4{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondaryColor);
+}
+
+.footer .container .support-column p{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondaryColor);
+}
+
+.footer .container .support-column a{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondaryColor);
+    position: relative;
+    top: 7px;
+}
+
+.footer .container .support-column a:hover{
+    opacity: 50%;
+}
+
+.footer .container .support-column span{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondaryColor);
+    position: relative;
+    top: 21px;
+}
+/* End Column Two */
+
+/* Start Column Three */
+.footer .container .account-column h4{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondaryColor);
+}
+
+.footer .container .account-column a{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondaryColor);
+}
+
+.footer .container .account-column a:hover{
+    opacity: 50%;
+}
+/* End Column Three */
+
+/* Start Column Four */
+.footer .container .quik-line-column h4{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondaryColor);
+    position: relative;
+    top: -10px;
+}
+
+.footer .container .quik-line-column a{
+    font-family: var(--mainFamily);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--secondaryColor);
+}
+
+.footer .container .quik-line-column a:hover{
+    opacity: 50%;
+}
+/* End Column Four */
+
+/* Start Column Five */
+.footer .download-column h4{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondaryColor);
+    position: relative;
+    top: 21px;
+}
+
+.footer .download-column p{
+    font-family: var(--mainFamily);
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    opacity: 50%;
+    color: var(--secondaryColor);
+}
+
+.footer .download-column .qr {
+    display: flex;
+    gap: 10px;
+    margin-top: 0px;
+}
+  
+.footer .download-column .qr .qr-img {
+    width: 80px;
+    height: 80px;
+}
+  
+.footer .download-column .qr .store img {
+    width: 113px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.footer .download-column .social-media-section i{
+    margin-top: 10px;
+    margin-right: 35px;
+    color: var(--secondaryColor);
+}
+
+.footer .download-column .social-media-section i:hover{
+    opacity: 50%;
+}
+/* End Column Five */
+/* End Footer  */
